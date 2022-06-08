@@ -1,0 +1,25 @@
+{
+  "name": "student_api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cctx": "^1.0.1",
+    "dotenv": "^16.0.1",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "faker": "^6.6.6",
+    "mongodb": "^4.6.0",
+    "mongoose": "^6.3.5",
+    "nodemon": "^2.0.16"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^7.1.0"
+  }
+}

@@ -1,0 +1,81 @@
+[
+    {
+      "name": "STTHOMAS",
+      "city":"lko",
+      "state": "UP",
+      "established_year":"2000-10-10"
+    },
+    {
+        "name": "MDM",
+        "city":"Delhi",
+        "state": "Delhi",
+        "established_year":"1980"
+      },
+      {
+        "name": "CMS",
+        "city":"Noida",
+        "state": "UP",
+        "established_year":"1957-02-12"
+      },
+      {
+        "name": "RLB",
+        "city":"LKO",
+        "state": "UP",
+        "established_year":"1982-02-04"
+      },
+      {
+        "name": "CITYNOBEL",
+        "city": "JAUNPUR",
+        "state": "UP",
+        "established_year":"2010-03-20"
+      },
+      {
+        "name": "CONVENT",
+        "city":"AZAMGARH",
+        "state": "UP",
+        "established_year":"2002-03-25"
+      },
+      {
+        "name": "XAVIER",
+        "city":"HARYANA",
+        "state": "HARYANA",
+        "established_year":"1999-07-10"
+      },
+      {
+        "name": "AKG",
+        "city": "GURUGRAM",
+        "state": "UP",
+        "established_year":"1997-2-30"
+      },
+      {
+        "name": "JAIPURIA",
+        "city": "PUNJAB",
+        "state": "PUNJAB",
+        "established_year":"2000-03-12"
+      },
+      {
+        "name": "LPS",
+        "city": "TELANGNA",
+        "state": "TAMIL",
+        "established_year":"1998-12-30"
+      },
+      {
+        "name": "PRMS",
+        "city":"ROHTAK",
+        "state": "UP",
+        "established_year":"1993-05-14"
+      },
+      {
+        "name": "TRST",
+        "city":"RAIPUR",
+        "state": "JAUNPUR",
+        "established_year":"2015-09-12"
+      },
+      {
+        "name": "JAUNPURIA",
+        "city":"JAUNPUR",
+        "state": "UK",
+        "established_year":"1930-11-19"
+      }
+   ]
+  

@@ -1,0 +1,94 @@
+[
+    {
+      "name": "accent chair",
+      "age": 25,
+      "class": "6",
+      "school":"STTHOMAS",
+      "year_joined":"2021-03-23"
+    },
+    {
+      "name": "Babar",
+      "age": 95,
+      "class": "7",
+      "school":"MDM",
+      "year_joined":"2021-03-01"
+    },
+    {
+      "name": "asdasfa",
+      "age": 5,
+      "class": "8",
+      "school":"mary",
+      "year_joined":"2001-03-23"
+    },
+    {
+      "name": "cxvs",
+      "age": 65,
+      "class": "2",
+      "school":"Gayatri",
+      "year_joined":"2005-09-14"
+    },
+    {
+      "name": "tommy",
+      "age":32,
+      "class": "5",
+      "school":"Malviya",
+      "year_joined":"2018-10-10"
+    },
+    {"name": "abhay",
+      "age": 23,
+      "class": "12",
+      "school":"City nobel",
+      "year_joined":"2007-12-31"
+    },
+    {
+      "name": "Harshu",
+      "age": 65,
+      "class": "2",
+      "school":"LPS",
+      "year_joined":"2015-09-3"
+    },
+    {
+      "name": "anurag",
+      "age": 91,
+      "class": "11",
+      "school":"xavier",
+      "year_joined":"2009-08-01"
+    },
+    {
+      "name": "shubhhu",
+      "age": 52,
+      "class": "3",
+      "school":"RLB",
+      "year_joined":"2018-02-12"
+    },
+  
+    {
+      "name": "fateh",
+      "age":34,
+      "class": "5",
+      "school":"CMS",
+      "year_joined":"2004-10-20"
+    },
+    {
+      "name": "Zainu",
+      "age": 74,
+      "class": "11",
+      "school":"Memorial",
+      "year_joined":"2006-1-20"
+    },
+    {
+      "name": "Dev",
+      "age": 4,
+      "class": "1",
+      "school":"Convent",
+      "year_joined":"1908-5-03"
+    },
+    {
+      "name": "prabhu",
+      "age": 92,
+      "class": "7",
+      "school":"Collegian",
+      "year_joined":"2002-9-20"
+    }
+   ]
+  
