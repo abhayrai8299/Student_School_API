@@ -2,6 +2,18 @@ const schoolModel=require('../models/schools');
 const jsonProducts_School=require('../School_details.json');
 
 
+function printerror(err)
+{
+    console.log(err)
+      const keys=Object.keys(err.errors);
+      if(keys.length)
+      {
+          const message=err.errors[keys[0]]
+          .properties.message
+          console.log(message)
+      }
+}
+
 const schoolPost=async (req,res)=>{
     try{
         let school= await schoolModel.create(req.body);
@@ -10,14 +22,7 @@ const schoolPost=async (req,res)=>{
        res.status(200).json({message:'Student created',school});
     }catch(error)
     {
-      console.log(error)
-      const keys=Object.keys(error.errors);
-      if(keys.length)
-      {
-          const message=error.errors[keys[0]]
-          .properties.message
-          console.log(message)
-      }
+      printerror(error)
         
     }
 }
@@ -31,13 +36,7 @@ const schoolPagination=async (req,res)=>{
         res.status(200).json({results:schoolPagination});
     }catch(error)
     {
-      const keys=Object.keys(error.errors);
-      if(keys.length)
-      {
-          const message=error.errors[keys[0]]
-          .properties.message
-          console.log(message)
-      }   
+      printerror(error)// calling function
     }
 }
 const schoolSearch=async(req,res)=>{

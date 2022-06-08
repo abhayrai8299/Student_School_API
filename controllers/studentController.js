@@ -1,7 +1,17 @@
 const studentModel=require('../models/students');
 const jsonProducts_Student=require('../Student_details.json')
 
-
+function printerror(err)
+{
+    console.log(err)
+      const keys=Object.keys(err.errors);
+      if(keys.length)
+      {
+          const message=err.errors[keys[0]]
+          .properties.message
+          console.log(message)
+      }
+}
 
 const studentPagination=async (req,res)=>{
     //const user=new Student(req.body)
@@ -14,15 +24,7 @@ const studentPagination=async (req,res)=>{
         res.send(Student_pagination);
     }catch(error)
     {
-      //  res.status(400)
-      console.log(error)
-      const keys=Object.keys(error.errors);
-      if(keys.length)
-      {
-          const message=error.errors[keys[0]]
-          .properties.message
-          console.log(message)
-      }
+       printerror(error)
         
     }
 }
@@ -49,20 +51,12 @@ const studentPost=async (req,res)=>{
        res.status(200).json({message:'Student created',student})
 
     }catch(error)
-    {
-      //  res.status(400)
-      console.log(error)
-      const keys=Object.keys(error.errors);
-      if(keys.length)
-      {
-          const message=error.errors[keys[0]]
-          .properties.message
-          console.log(message)
+     {
+      printerror(error)
+     
       }
         
     }
-
-}
 const studentID=async(req,res)=>
 {
     try{
