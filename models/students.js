@@ -14,8 +14,8 @@ const StudentSchema = new mongoose.Schema({
     required: [true, "Student class must be provided"],
   },
   school: {
-   // type:mongoose.Schema.Types.ObjectId,
-    type:String,
+    type:mongoose.Schema.Types.ObjectId,
+    //type:String,
     ref:'School',
     required: [true, "School name must be provided"],
   },
