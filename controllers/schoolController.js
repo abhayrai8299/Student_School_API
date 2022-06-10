@@ -107,8 +107,6 @@ const schoolGet=async(req,res)=>{
     }
     res.send('all items')
 }
-
-
 module.exports=
 {
     schoolPost,
@@ -117,5 +115,5 @@ module.exports=
     schoolID,
     schoolDelete,
     schoolUpdate,
-    schoolGet
+    schoolGet,
 };

@@ -10,13 +10,13 @@ const {studentPost,
     studentGet
 }=require("../controllers/studentController");
 
-router.get("/student/:id",studentID)
-      .get("/student",studentGet)
-      .post("/student/create",studentPost)
-      .delete("/student/:id",studentDelete)
-      .put("/student/:id",studentUpdate)
-      .get("/student",studentPagination)
-      .get("/student/search/:key",studentSearch);
+router.get("/",studentGet)
+       .get("/:id",studentID)
+      .post("/",studentPost)
+      .delete("/:id",studentDelete)
+      .put("/:id",studentUpdate)
+      .get("/",studentPagination)
+      .get("/search/:key",studentSearch);
 
 
       module.exports = router;

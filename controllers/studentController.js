@@ -45,9 +45,11 @@ const studentDelete=async(req,res)=>{
 const studentPost=async (req,res)=>{
     //const user=new Student(req.body)
     try{
+        console.log("Student")
         console.log(req.body)
       let student= await studentModel.create(req.body);
-        student= await studentModel.create(jsonProducts_Student);
+      console.log(student)
+        // student= await studentModel.create(jsonProducts_Student);
        res.status(200).json({message:'Student created',student})
 
     }catch(error)
@@ -102,9 +104,9 @@ const studentUpdate=async (req,res)=>{
 }
 const studentGet=async(req,res)=>{
     try{
-         const data=await studentModel.find({})
-         res.status(200).json({data})
-    }catch(error)
+        const student=await studentModel.find({})
+        res.status(200).json({student})
+   }catch(error)
     {
         res.status(500).json({msg:error})
     }

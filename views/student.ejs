@@ -2,24 +2,68 @@
 <html lang="en">
 
 <head>
-    <title>Student Form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Form</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
 
 <body>
+  <div class="container">
     <br>
+    <h1>Student Form</h1>
     <br>
-    <form>
-        <label> Name:</label>
-        <input type="text" name="name" size="15" /> <br> <br>
-        <label> Age:</label>
-        <input type="number" name="age" size="5" /> <br> <br>
-        <label>Class:</label>
-        <input type="number" name="class" size="5" /> <br> <br>
-        <label>School:</label>
-        <input type="text" name="school" size="15" /> <br> <br>
-        <label>Year Joined:</label>
-        <input type="number" name="year_joined" size="5" /> <br> <br>
+    <form action="/student" method="POST">
+      <div class="form-group">
+        <label for="name" class="form-label">Name</label>
+        <input type="text" class="form-control" name="name" id="name" aria-describedby="emailHelp"
+          placeholder="Enter Name">
+      </div>
+      <div class="form-group">
+        <label for="age" class="form-label">Age</label>
+        <input type="number" class="form-control" name="age" id="age" placeholder="Age">
+      </div>
+      <div class="form-group">
+        <label for="class" class="form-label">Class</label>
+        <input type="number" class="form-control" name="class" id="class" placeholder="Class">
+      </div>
+      <div class="form-group">
+        <label for="school" class="form-label">School</label>
+        <select class="form-control" name="student" id="student">
+          <% student.forEach(function(student){ %>
+          <option value="<%=student.id%>"><%=student.name%></option>
+          <% }); %>
+
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="year_joined" class="form-label">Year_Joined</label>
+        <input type="number" class="form-control" name="year_joined" id="year_joined">
+      </div><br>
+      <button type="submit" class="btn btn-primary">Submit</button>
     </form>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script>
+    let btn = document.querySelector('button');
+    btn.addEventListener('click', async (e) => {
+      e.preventDefault();
+      let name = document.querySelector("#name").value;
+      let age = document.querySelector("#age").value;
+      let classes = document.querySelector("#class").value;
+      let school = document.querySelector("#school").value;
+      let year_joined = document.querySelector("#year_joined").value;
+
+      let resp = await axios.post('/api/v1/student', {
+        name,
+        age,
+        class: classes,
+        school,
+        year_joined
+      })
+      console.log('resp', resp);
+    })
+  </script>
 </body>
 
 </html>

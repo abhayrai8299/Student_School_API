@@ -7,17 +7,16 @@ const {schoolPost,
     schoolID,
     schoolDelete,
     schoolUpdate,
-    schoolGet
+    schoolGet,
+
 }=require("../controllers/schoolController");
 
-router.get("/school/:id",schoolID)
-      .get("/school",schoolGet)
-      .post("/school/create",schoolPost)
-      .delete("/school/:id",schoolDelete)
-      .put("/school/:id",schoolUpdate)
-      .get("/school",schoolPagination)
-      .get("/school/search/:key",schoolSearch);
-
-
-
+router.get("/:id",schoolID)
+      .get("/",schoolGet)
+      .post("/",schoolPost)
+      .delete("/:id",schoolDelete)
+      .put("/:id",schoolUpdate)
+      .get("/",schoolPagination)
+      .get("/:key",schoolSearch)
+      
       module.exports = router;
